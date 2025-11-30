@@ -1,0 +1,8 @@
+CONFIGURAÇÃO CSS PARA ARREDONDAR OS CANTOS DA TABELA:
+
+Se aplicamos uma borda em todas as td's e th's para melhor organização das linhas e colunas da tabela, as bordas ficarão de forma duplicada internamente.
+Para resolver isso usamos a propriedade border-collapse: collapse
+Mas se quisermos arredondar os cantos da tabela, com o border collapse: collapse aplicado, não é possível.
+Então nessa tabela que criei, com o border-radius aplicado, tive que usar o border-radius: separate e o border-spacing: 0 para juntar as bordas.
+Mas quando usamos o border-spacing, mesmo que definirmos uma borda de 1px, ela terá 2px na verdade, nas bordas internas, onde uma borda se junta à outra.
+Para resolver isso, usei o border-top, border-left e border-right com o valor none em algumas td's e th's específicas da tabela, para retirar a duplicação de bordas.
